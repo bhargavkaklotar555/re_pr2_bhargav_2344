@@ -33,10 +33,12 @@ Photos:
 
 
 Project Technologies:
+
 Dart language
 Flutter framework with MVC and Provider architecture
 
 Project Requirements:
+
 Knowledge of programming languages such as Dart and JavaScript.
 Familiarity with the Flutter framework and Api calling.
 Understanding of user interface design principles and best practices.
@@ -44,11 +46,13 @@ Experience with mobile app development and related tools like Android Studio or 
 Ability to work independently.
 
 Project Evaluation:
+
 User satisfaction with the application’s functionality and UI/UX
 Quality of code and project structure
 Presentation quality and clarity of communication
 
 Project Deliverables:
+
 A functional Ecommerce application developed using Flutter.
 Source code and documentation for the application.
 User manual and installation instructions.
