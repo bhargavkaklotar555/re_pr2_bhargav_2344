@@ -1,7 +1,9 @@
 Project Definition:
+
 Quickby (ecoomerce app)
 
 Project Description:
+
 An quickby app allows users to shop online, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities
 
 Videos:
