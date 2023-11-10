@@ -20,6 +20,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Products"),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed(MyRoutes.FavritePage);
+            },
+            icon: Icon(Icons.favorite),
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

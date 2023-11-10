@@ -1,5 +1,7 @@
 import 'dart:developer';
+import 'dart:ui';
 
+import 'package:get/get.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -12,7 +14,7 @@ class DBHelper {
 
   late Database database;
 
-  String Table = "p1";
+  String Table = "p2";
 
   String P_id = "id";
   String P_name = "name";
@@ -20,7 +22,7 @@ class DBHelper {
 
   init_DB() async {
     String dbPath = await getDatabasesPath();
-    String dbName = "p1.db";
+    String dbName = "p2.db";
 
     String finalPath = join(dbPath, dbName);
 
@@ -44,7 +46,6 @@ class DBHelper {
     List args = [name, image];
 
     int product = await database.rawInsert(query, args);
-
     return product;
   }
 

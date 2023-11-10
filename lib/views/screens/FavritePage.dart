@@ -10,7 +10,11 @@ class FavritePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    controller.init();
     return Scaffold(
+      appBar: AppBar(
+        title: Text("FavritePage"),
+      ),
       body: Padding(
         padding: EdgeInsets.all(16),
         child: Obx(
@@ -31,12 +35,9 @@ class FavritePage extends StatelessWidget {
                           ),
                           leading: CircleAvatar(
                             radius: 22,
-                            backgroundColor:
-                                Colors.primaries[index % 18].shade200,
-                            child: Text(
-                              "${controller.allProducts[index].name?.substring(0, 1).toUpperCase()}",
-                              style: const TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w400),
+                            backgroundImage: NetworkImage(
+                              controller.allProducts.value[index].image
+                                  .toString(),
                             ),
                           ),
                         ),

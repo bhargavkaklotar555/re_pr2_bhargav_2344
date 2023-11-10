@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:provider/provider.dart';
 
+import '../../controller/DB_Controller.dart';
 import '../../controller/api_controller.dart';
 import '../../modals/Productsmodals.dart';
 
@@ -13,6 +16,7 @@ class ProductDetailedPage extends StatelessWidget {
         ModalRoute.of(context)!.settings.arguments as ProductModal;
 
     Size size = MediaQuery.of(context).size;
+    DBController controller = Get.find();
 
     return Scaffold(
       appBar: AppBar(
@@ -27,6 +31,15 @@ class ProductDetailedPage extends StatelessWidget {
           },
           icon: Icon(Icons.arrow_back_ios),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              controller.insert_product(
+                  name: "${data.title}", image: "${data.thumbnail}");
+            },
+            icon: Icon(Icons.favorite),
+          ),
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
