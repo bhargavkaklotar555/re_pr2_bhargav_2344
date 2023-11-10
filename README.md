@@ -1,19 +1,8 @@
-Project Definition: 
-re_pr2_bhargav_2344
-
+Project Definition:
 Quickby (ecoomerce app)
 
 Project Description:
-"Quickby" is a mobile application aimed at providing a comprehensive and user-friendly
-platform for studying and exploring the teachings of ecommerce. Built using Flutter, the app
-incorporates various concepts such as Api,Database,helpers and Shared Preferences to enhance the
-user experience. It offers a range of functionalities designed to facilitate easy navigation,
-customization, and accessibility for users.
-The "Quickby" app aims to create an immersive and personalized experience for users seeking
-spiritual guidance through the teachings of the Ecommerce. By incorporating Api,Database,helpers and
- Shared Preferences, like functionality, themes, chapter images, splash screens, detailed
-verse screens, and multi-language support, the app offers a comprehensive solution for users to
-explore and engage with this sacred text.
+An quickby app allows users to shop online, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities
 
 Videos:
 
