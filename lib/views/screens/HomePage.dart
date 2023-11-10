@@ -28,19 +28,19 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage("assets/images/logo.png"),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.favorite_border,
                     size: 30,
                   ),
@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
                     onPressed: () {
                       Navigator.of(context).pushNamed(MyRoutes.FavritePage);
                     },
-                    child: Text(
+                    child: const Text(
                       "Favrite",
                       style: TextStyle(fontSize: 25),
                     ),
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     CupertinoIcons.cart,
                     size: 30,
                   ),
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                     onPressed: () {
                       Navigator.of(context).pushNamed(MyRoutes.Cart_Page);
                     },
-                    child: Text(
+                    child: const Text(
                       "Cart",
                       style: TextStyle(fontSize: 25),
                     ),

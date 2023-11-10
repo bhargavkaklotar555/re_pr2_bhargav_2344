@@ -21,23 +21,23 @@ class Check_Network_Page extends StatelessWidget {
                 "=================================${res}===============================");
             switch (res) {
               case ConnectivityResult.mobile:
-                return Center(
+                return const Center(
                   child: HomePage(),
                 );
               case ConnectivityResult.wifi:
-                return Center(
+                return const Center(
                   child: HomePage(),
                 );
               case ConnectivityResult.vpn:
-                return Center(
+                return const Center(
                   child: HomePage(),
                 );
               case ConnectivityResult.other:
-                return Center(
+                return const Center(
                   child: HomePage(),
                 );
               case ConnectivityResult.ethernet:
-                return Center(
+                return const Center(
                   child: HomePage(),
                 );
               case ConnectivityResult.none:

@@ -8,6 +8,7 @@ class ProductController extends ChangeNotifier {
 
   Future<List<ProductModal>> getAllProducts() async {
     allProducts = (await ProductsHelper.productsHelper.getProducts())!;
+    notifyListeners();
     log("$allProducts");
     return allProducts;
   }

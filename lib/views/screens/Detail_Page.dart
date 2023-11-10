@@ -22,7 +22,7 @@ class ProductDetailedPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "${data.title}",
-          style: TextStyle(
+          style: const TextStyle(
               color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
         ),
         leading: IconButton(
@@ -65,7 +65,7 @@ class ProductDetailedPage extends StatelessWidget {
                 children: [
                   Text(
                     "${data.title}",
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.black,
                         fontSize: 25,
                         fontWeight: FontWeight.bold),
@@ -92,9 +92,9 @@ class ProductDetailedPage extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Text(
+                      const Text(
                         "Category:",
-                        style: const TextStyle(
+                        style: TextStyle(
                             color: Colors.black,
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
@@ -114,9 +114,9 @@ class ProductDetailedPage extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Quantity:",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                     ),
@@ -175,9 +175,9 @@ class ProductDetailedPage extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Stock:",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                     ),
