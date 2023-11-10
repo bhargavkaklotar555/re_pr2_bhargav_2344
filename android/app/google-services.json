@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "9660359228",
+    "project_id": "exam-ecommerce-app",
+    "storage_bucket": "exam-ecommerce-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9660359228:android:eb8e79a14e65f20b71d939",
+        "android_client_info": {
+          "package_name": "com.example.re_pr2_bhargav_2344"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT3ffquRHz9KGq4HmwU5N2u9NbtD0QUlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

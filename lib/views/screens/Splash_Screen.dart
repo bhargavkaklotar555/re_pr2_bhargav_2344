@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+import 'package:re_pr2_bhargav_2344/views/screens/HomePage.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
+
+class Splash_Screen extends StatelessWidget {
+  const Splash_Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
+      body: AnimatedSplashScreen(
+        splash: Image.asset("assets/images/logo.png"),
+        splashIconSize: 200,
+        nextScreen: HomePage(),
+        duration: 3000,
+      ),
+    );
+  }
+}
