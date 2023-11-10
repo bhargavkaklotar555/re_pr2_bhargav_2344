@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:re_pr2_bhargav_2344/helper/DB_Helper.dart';
 import '../../controller/DB_Controller.dart';
 
 class FavritePage extends StatelessWidget {
@@ -14,6 +15,12 @@ class FavritePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("FavritePage"),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(Icons.arrow_back_ios),
+        ),
       ),
       body: Padding(
         padding: EdgeInsets.all(16),
@@ -39,6 +46,15 @@ class FavritePage extends StatelessWidget {
                               controller.allProducts.value[index].image
                                   .toString(),
                             ),
+                          ),
+                          trailing: IconButton(
+                            onPressed: () {
+                              DBHelper.dbHelper.removeProduct(
+                                pid: int.parse(
+                                    "${controller.allProducts.value[index].id}"),
+                              );
+                            },
+                            icon: Icon(Icons.delete),
                           ),
                         ),
                       );

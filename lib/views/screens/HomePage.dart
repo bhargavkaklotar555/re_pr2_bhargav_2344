@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../controller/api_controller.dart';
 import '../../modals/Productsmodals.dart';
@@ -20,14 +21,60 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Products"),
-        actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.of(context).pushNamed(MyRoutes.FavritePage);
-            },
-            icon: Icon(Icons.favorite),
+      ),
+      drawer: Drawer(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 30,
+              ),
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage("assets/images/logo.png"),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.favorite_border,
+                    size: 30,
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(MyRoutes.FavritePage);
+                    },
+                    child: Text(
+                      "Favrite",
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(
+                    CupertinoIcons.cart,
+                    size: 30,
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(MyRoutes.Cart_Page);
+                    },
+                    child: Text(
+                      "Cart",
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
-        ],
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -59,27 +106,30 @@ class _HomePageState extends State<HomePage> {
                           child: GridTile(
                             child: Column(
                               children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey.shade300,
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  child: Column(
-                                    children: [
-                                      const SizedBox(
-                                        height: 10,
-                                      ),
-                                      Center(
-                                        child: SizedBox(
-                                          height: 150,
-                                          width: 200,
-                                          child: Image.network(
-                                            productModal.thumbnail,
-                                            fit: BoxFit.fill,
+                                Hero(
+                                  tag: 'a',
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        const SizedBox(
+                                          height: 10,
+                                        ),
+                                        Center(
+                                          child: SizedBox(
+                                            height: 150,
+                                            width: 200,
+                                            child: Image.network(
+                                              productModal.thumbnail,
+                                              fit: BoxFit.fill,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(

@@ -44,6 +44,8 @@ dependencies:
   dio:
   provider: ^6.1.1
   sqflite:
+  firebase_storage:
+  connectivity_plus:
 
 dev_dependencies:
   flutter_test:

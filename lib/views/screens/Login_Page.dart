@@ -5,8 +5,14 @@ class Login_Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController email = TextEditingController();
+    TextEditingController password = TextEditingController();
     return Scaffold(
-      body: Center(),
+      body: Center(
+        child: Column(
+          children: [],
+        ),
+      ),
     );
   }
 }

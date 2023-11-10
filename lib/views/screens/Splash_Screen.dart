@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:re_pr2_bhargav_2344/views/screens/HomePage.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+
+import 'check_connection.dart';
 
 class Splash_Screen extends StatelessWidget {
   const Splash_Screen({super.key});
@@ -14,7 +15,7 @@ class Splash_Screen extends StatelessWidget {
       body: AnimatedSplashScreen(
         splash: Image.asset("assets/images/logo.png"),
         splashIconSize: 200,
-        nextScreen: HomePage(),
+        nextScreen: Check_Network_Page(),
         duration: 3000,
       ),
     );

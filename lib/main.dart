@@ -5,7 +5,10 @@ import 'package:re_pr2_bhargav_2344/utils/MyRoutes.dart';
 import 'package:re_pr2_bhargav_2344/views/screens/Detail_Page.dart';
 import 'package:re_pr2_bhargav_2344/views/screens/FavritePage.dart';
 import 'package:re_pr2_bhargav_2344/views/screens/HomePage.dart';
+import 'package:re_pr2_bhargav_2344/views/screens/Login_Page.dart';
 import 'package:re_pr2_bhargav_2344/views/screens/Splash_Screen.dart';
+import 'package:re_pr2_bhargav_2344/views/screens/cart_page.dart';
+import 'package:re_pr2_bhargav_2344/views/screens/check_connection.dart';
 import 'controller/DB_Controller.dart';
 import 'controller/api_controller.dart';
 import 'helper/DB_Helper.dart';
@@ -47,6 +50,9 @@ class MyApp extends StatelessWidget {
         MyRoutes.Splash_Screen: (context) => Splash_Screen(),
         MyRoutes.ProductDetailedPage: (context) => ProductDetailedPage(),
         MyRoutes.FavritePage: (context) => FavritePage(),
+        MyRoutes.Login_Page: (context) => Login_Page(),
+        MyRoutes.Cart_Page: (context) => Cart_Page(),
+        MyRoutes.Check_Network_Page: (context) => Check_Network_Page(),
       },
     );
   }

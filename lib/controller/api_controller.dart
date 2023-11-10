@@ -10,6 +10,5 @@ class ProductController extends ChangeNotifier {
     allProducts = (await ProductsHelper.productsHelper.getProducts())!;
     log("$allProducts");
     return allProducts;
-    notifyListeners();
   }
 }

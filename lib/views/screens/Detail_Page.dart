@@ -47,10 +47,13 @@ class ProductDetailedPage extends StatelessWidget {
           const SizedBox(
             height: 35,
           ),
-          Center(
-            child: Image.network(
-              data.thumbnail,
-              height: size.height * 0.25,
+          Hero(
+            tag: 'a',
+            child: Center(
+              child: Image.network(
+                data.thumbnail,
+                height: size.height * 0.25,
+              ),
             ),
           ),
           Spacer(),
